@@ -1,6 +1,6 @@
 # Frontend Mentor - Order summary card solution
 
-This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -10,7 +10,6 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Continued development](#continued-development)
 
 ## Overview
 
@@ -26,18 +25,13 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/timavidon/frontend-mentor-c6)
-- Live Site URL: [Live Site](https://timavidon.github.io/frontend-mentor-c6/)
+- Solution URL: [Github](https://github.com/timavidon/Order-summary-component)
+- Live Site URL: [Live Site](https://timavidon.github.io/Order-summary-component/)
 
 ## My process
 
 ### Built with
 
 - HTML
-- CSS 
-- Flexbox
-
-### Continued development
-
-I want to improve my responsive and accessibility skills. And also know the best practices.
-
+- CSS
+- Mobile First

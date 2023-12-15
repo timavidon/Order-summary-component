@@ -32,6 +32,11 @@ picture {
   display: block;
 }
 
+button,
+input {
+  font: inherit;
+}
+
 h1,
 h2,
 h3,
@@ -48,13 +53,12 @@ body {
   min-height: 100dvh;
   font-family: var(--ff-primary);
   line-height: 1.6;
-  padding-inline: 2rem;
+  padding: 2rem;
   background-color: var(--pale-blue);
 
-  /* background: url(./images/pattern-background-mobile.svg);
-  background-position: center;
+  background-image: url(./images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: contain;
 }
 
 .card {
@@ -62,31 +66,36 @@ body {
   text-align: center;
   border-radius: 1.5rem;
   background-color: var(--white);
+  box-shadow: 3px 2px 20px -7px var(--desaturated-blue),
+    5px 8px 20px -7px var(--pale-blue);
 }
 
 .content {
-  padding: 45px;
-  box-shadow: 0.1rem 0.1rem 1rem var(--pale-blue);
+  padding: 2.5rem 2rem;
 }
 
-.card-img {
+.card-img > svg {
   border-radius: 1.5rem 1.5rem 0 0;
 }
 
 .heading {
-  font-size: 28px;
+  font-size: 1.625rem;
   font-weight: var(--fw-black);
+  margin-top: 0.5rem;
   color: var(--dark-blue);
 }
 
 .description {
+  margin-top: 1.4rem;
   color: var(--desaturated-blue);
 }
 
 .pricing {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  margin-block: 2rem;
   padding: 1.4rem;
   border-radius: 1rem;
   background-color: var(--very-pale-blue);
@@ -97,39 +106,42 @@ body {
   align-items: center;
 }
 
-.plan-info {
+.plan__info {
   color: var(--dark-blue);
-  margin-left: 1rem;
+  margin-left: 1.3rem;
 }
 
-.plan-heading {
+.plan__heading {
   font-weight: var(--fw-black);
 }
 
-.plan-price {
+.plan__price {
   color: var(--desaturated-blue);
 }
 
-.plan-change {
+.plan__change {
   font-weight: var(--fw-bold);
+  opacity: 0.85;
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.plan-change:hover {
-  opacity: 0.6;
+.plan__change:hover {
+  opacity: 0.5;
   text-decoration: none;
 }
 
 .payment-btn,
 .cancel-btn {
   width: 100%;
-  font-size: 15px;
-  font-weight: var(--fw-black);
+  font-size: 1.125rem;
+  font-weight: var(--fw-bold);
   border: none;
   cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .payment-btn {
-  margin-block: 2rem;
+  margin-bottom: 1.2rem;
   padding: 1.2rem;
   border-radius: 1rem;
   color: var(--white);
@@ -138,7 +150,7 @@ body {
 }
 
 .payment-btn:hover {
-  opacity: 0.6;
+  opacity: 0.65;
 }
 
 .cancel-btn {
@@ -156,5 +168,27 @@ body {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--bright-blue);
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.attribution a:hover {
+  opacity: 0.7;
+}
+
+/* Utilities */
+.wrapper {
+  padding-inline: 2rem;
+}
+
+/* Desktop */
+@media (min-width: 50em) {
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+  }
+
+  .payment-btn,
+  .cancel-btn {
+    font-size: 1rem;
+  }
 }
